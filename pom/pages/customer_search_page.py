@@ -18,7 +18,7 @@ class CustomerSearchPage:
     SEARCH_BUTTON = (By.ID, "srch-submit-btn")
     NO_CUSTOMER_ALERT = (By.ID,"res-empty-text")
     CREATE_CUSTOMER_BUTTON = (By.ID, "res-create-btn")
-    CUSTOMER_ID_BUTTON = (By.ID,"res-custid-btn-c86c04cc-377f-4adf-b20a-84fa97161395")
+    CUSTOMER_ID_BUTTON = (By.XPATH,"(//*[@class='px-2 py-0.5 rounded-full border-2 border-orange-400 text-sm underline bg-white hover:bg-orange-50'])[1]")
 
  
 
