@@ -77,3 +77,15 @@ class Utils:
             return element.get_attribute("type")
         logger.warning(f"Cannot get type attribute for: {locator}")
         return None
+    def clear_input_field(self, locator):
+        element = self.wait_for_element(locator)
+        element.clear()
+    def get_input_value(self, locator):
+        element = self.wait_for_element(locator)
+        return element.get_attribute("value")
+    def scroll_into_view(self, locator):
+        element = self.wait_for_element(locator)
+        self.driver.execute_script("arguments[0].scrollIntoView(true);", element)
+
+
+
